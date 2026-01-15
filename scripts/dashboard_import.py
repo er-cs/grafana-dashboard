@@ -5,7 +5,7 @@ import requests
 # ================= CONFIG =================
 GRAFANA_URL = "http://localhost:3000"
 API_TOKEN = os.environ["GRAFANA_API_KEY"]
-DASHBOARD_DIR = "dashboards"   # folder containing *.json files
+DASHBOARD_DIR = DASHBOARD_DIR = os.path.join(os.path.dirname(__file__), "..", "dashboards")   # folder containing *.json files
 FOLDER_ID = None                 # set to an int if you want a specific folder
 OVERWRITE = True
 TIMEOUT = 30
