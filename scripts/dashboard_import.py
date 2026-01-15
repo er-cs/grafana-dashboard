@@ -89,10 +89,10 @@ def import_dashboard(file_path: str) -> bool:
 
     if response.status_code == 200:
         title = dashboard.get("title", os.path.basename(file_path))
-        print(f"✅ Imported: {title}")
+        print(f"Imported: {title}")
         return True
     else:
-        print(f"❌ Failed: {file_path}")
+        print(f"Failed: {file_path}")
         print(f"   {response.status_code}: {response.text}")
         return False
 
