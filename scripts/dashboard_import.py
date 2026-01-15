@@ -9,7 +9,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 # ================= CONFIG =================
 GRAFANA_URL = "http://localhost:3000"
 API_TOKEN = os.environ["GRAFANA_API_KEY"]
-DASHBOARD_DIR = os.path.join(os.path.dirname(__file__), "..", "dashboards")   # folder containing *.json files
+workspace_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DASHBOARD_DIR = os.path.join(workspace_root, "dashboards")
+
 FOLDER_ID = None                 # set to an int if you want a specific folder
 OVERWRITE = True
 TIMEOUT = 30
