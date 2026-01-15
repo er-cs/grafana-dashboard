@@ -1,6 +1,10 @@
 import json
 import os
 import requests
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+
 
 # ================= CONFIG =================
 GRAFANA_URL = "http://localhost:3000"
