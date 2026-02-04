@@ -1,0 +1,26 @@
+[
+  {
+    "id": 9,
+    "playlist_id": 1,
+    "type": "dashboard_by_uid",
+    "value": "ad2p4th",
+    "title": "",
+    "order": 1
+  },
+  {
+    "id": 10,
+    "playlist_id": 1,
+    "type": "dashboard_by_uid",
+    "value": "a1e36da4-4418-40aa-ac80-678c3c440421",
+    "title": "",
+    "order": 2
+  },
+  {
+    "id": 11,
+    "playlist_id": 1,
+    "type": "dashboard_by_uid",
+    "value": "a0a151d3-57ba-4611-9c57-e5ca09bb90dd",
+    "title": "",
+    "order": 3
+  }
+]
