@@ -76,12 +76,12 @@
     "kind": 1,
     "type": "stat",
     "description": "",
-    "model": "{\"datasource\":{\"type\":\"influxdb\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"noValue\":\"-\",\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null}]},\"unit\":\"none\"},\"overrides\":[]},\"gridPos\":{\"h\":9,\"w\":4,\"x\":0,\"y\":10},\"id\":6,\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"text\":{\"percentSize\":6},\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"${DS_DS_INFLUXDB-1}\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\n  |\\u003e range(start: -30d)\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"code_smells\\\")\\n  |\\u003e last()\\n  |\\u003e keep(columns: [\\\"_value\\\"])\",\"refId\":\"A\"}],\"title\":\"Code Smells\",\"type\":\"stat\"}",
+    "model": "{\"datasource\":{\"type\":\"influxdb\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"noValue\":\"-\",\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null}]},\"unit\":\"none\"},\"overrides\":[]},\"gridPos\":{\"h\":5,\"w\":7,\"x\":6,\"y\":9},\"id\":5,\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"text\":{\"percentSize\":6},\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"${DS_DS_INFLUXDB-1}\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\n  |\\u003e range(start: -30d)\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"code_smells\\\")\\n  |\\u003e last()\\n  |\\u003e keep(columns: [\\\"_value\\\"])\",\"refId\":\"A\"}],\"title\":\"Code Smells\",\"type\":\"stat\"}",
     "created": "2026-01-15 12:12:51",
     "created_by": 1,
-    "updated": "2026-01-15 12:13:43",
+    "updated": "2026-02-04 09:56:14",
     "updated_by": 1,
-    "version": 2,
+    "version": 3,
     "folder_uid": "general"
   },
   {
@@ -110,12 +110,12 @@
     "kind": 1,
     "type": "stat",
     "description": "",
-    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":1}]}},\"overrides\":[]},\"gridPos\":{\"h\":5,\"w\":6,\"x\":0,\"y\":3},\"id\":8,\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"blocker_violations\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\\r\\n\",\"refId\":\"A\"}],\"title\":\"Blocker Issue\",\"type\":\"stat\"}",
+    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ffc7vi02xq77kc\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":1}]}},\"overrides\":[]},\"gridPos\":{\"h\":5,\"w\":6,\"x\":0,\"y\":3},\"id\":8,\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"blocker_violations\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\\r\\n\",\"refId\":\"A\"}],\"title\":\"Blocker Issue\",\"type\":\"stat\"}",
     "created": "2026-01-15 12:29:51",
     "created_by": 1,
-    "updated": "2026-01-15 13:39:55",
+    "updated": "2026-02-04 10:51:14",
     "updated_by": 1,
-    "version": 3,
+    "version": 5,
     "folder_uid": "general"
   },
   {
@@ -127,12 +127,12 @@
     "kind": 1,
     "type": "stat",
     "description": "",
-    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":8,\"w\":12,\"x\":0,\"y\":0},\"id\":9,\"libraryPanel\":{\"name\":\"LP_Critical Issues\",\"uid\":\"ffa8rymorb01sf\"},\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"critical_violations\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\\r\\n\",\"refId\":\"A\"}],\"title\":\"Critical Issues\",\"type\":\"stat\"}",
+    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ffc7vi02xq77kc\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":5,\"w\":6,\"x\":6,\"y\":3},\"id\":9,\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"critical_violations\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\\r\\n\",\"refId\":\"A\"}],\"title\":\"Critical Issues\",\"type\":\"stat\"}",
     "created": "2026-01-15 12:32:28",
     "created_by": 1,
-    "updated": "2026-01-15 12:32:28",
+    "updated": "2026-02-04 10:51:37",
     "updated_by": 1,
-    "version": 1,
+    "version": 2,
     "folder_uid": "general"
   },
   {
@@ -144,12 +144,12 @@
     "kind": 1,
     "type": "stat",
     "description": "",
-    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":8,\"w\":12,\"x\":0,\"y\":0},\"id\":10,\"libraryPanel\":{\"name\":\"LP_Major Issues\",\"uid\":\"afa8s9kh91f5sd\"},\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"major_violations\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\\r\\n\",\"refId\":\"A\"}],\"title\":\"Major Issues\",\"type\":\"stat\"}",
+    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ffc7vi02xq77kc\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":5,\"w\":5,\"x\":12,\"y\":3},\"id\":10,\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"major_violations\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\\r\\n\",\"refId\":\"A\"}],\"title\":\"Major Issues\",\"type\":\"stat\"}",
     "created": "2026-01-15 12:35:53",
     "created_by": 1,
-    "updated": "2026-01-15 12:35:53",
+    "updated": "2026-02-04 10:52:06",
     "updated_by": 1,
-    "version": 1,
+    "version": 2,
     "folder_uid": "general"
   },
   {
@@ -161,12 +161,12 @@
     "kind": 1,
     "type": "timeseries",
     "description": "",
-    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"palette-classic\"},\"custom\":{\"axisBorderShow\":false,\"axisCenteredZero\":false,\"axisColorMode\":\"text\",\"axisLabel\":\"\",\"axisPlacement\":\"auto\",\"barAlignment\":0,\"barWidthFactor\":0.6,\"drawStyle\":\"line\",\"fillOpacity\":0,\"gradientMode\":\"none\",\"hideFrom\":{\"legend\":false,\"tooltip\":false,\"viz\":false},\"insertNulls\":false,\"lineInterpolation\":\"linear\",\"lineWidth\":1,\"pointSize\":5,\"scaleDistribution\":{\"type\":\"linear\"},\"showPoints\":\"auto\",\"showValues\":false,\"spanNulls\":false,\"stacking\":{\"group\":\"A\",\"mode\":\"none\"},\"thresholdsStyle\":{\"mode\":\"off\"}},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":8,\"w\":12,\"x\":0,\"y\":1},\"id\":13,\"libraryPanel\":{\"name\":\"LP_New Bugs\",\"uid\":\"ffa8sztgr5zwga\"},\"options\":{\"legend\":{\"calcs\":[],\"displayMode\":\"list\",\"placement\":\"bottom\",\"showLegend\":true},\"tooltip\":{\"hideZeros\":false,\"mode\":\"single\",\"sort\":\"none\"}},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"new_bugs\\\")\\r\\n  |\\u003e map(fn: (r) =\\u003e ({\\r\\n      _time: r._time,\\r\\n      _value: int(v: r._value)\\r\\n    }))\\r\\n\",\"refId\":\"A\"}],\"title\":\"New Bugs\",\"type\":\"timeseries\"}",
+    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ffc7vi02xq77kc\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"palette-classic\"},\"custom\":{\"axisBorderShow\":false,\"axisCenteredZero\":false,\"axisColorMode\":\"text\",\"axisLabel\":\"\",\"axisPlacement\":\"auto\",\"barAlignment\":0,\"barWidthFactor\":0.6,\"drawStyle\":\"line\",\"fillOpacity\":0,\"gradientMode\":\"none\",\"hideFrom\":{\"legend\":false,\"tooltip\":false,\"viz\":false},\"insertNulls\":false,\"lineInterpolation\":\"linear\",\"lineWidth\":1,\"pointSize\":5,\"scaleDistribution\":{\"type\":\"linear\"},\"showPoints\":\"auto\",\"showValues\":false,\"spanNulls\":false,\"stacking\":{\"group\":\"A\",\"mode\":\"none\"},\"thresholdsStyle\":{\"mode\":\"off\"}},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":9,\"w\":12,\"x\":0,\"y\":26},\"id\":13,\"options\":{\"legend\":{\"calcs\":[],\"displayMode\":\"list\",\"placement\":\"bottom\",\"showLegend\":true},\"tooltip\":{\"hideZeros\":false,\"mode\":\"single\",\"sort\":\"none\"}},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"new_bugs\\\")\\r\\n  |\\u003e map(fn: (r) =\\u003e ({\\r\\n      _time: r._time,\\r\\n      _value: int(v: r._value)\\r\\n    }))\\r\\n\",\"refId\":\"A\"}],\"title\":\"New Bugs\",\"type\":\"timeseries\"}",
     "created": "2026-01-15 12:44:03",
     "created_by": 1,
-    "updated": "2026-01-15 12:44:03",
+    "updated": "2026-02-04 10:52:39",
     "updated_by": 1,
-    "version": 1,
+    "version": 2,
     "folder_uid": "general"
   },
   {
@@ -178,12 +178,12 @@
     "kind": 1,
     "type": "timeseries",
     "description": "",
-    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"palette-classic\"},\"custom\":{\"axisBorderShow\":false,\"axisCenteredZero\":false,\"axisColorMode\":\"text\",\"axisLabel\":\"\",\"axisPlacement\":\"auto\",\"barAlignment\":0,\"barWidthFactor\":0.6,\"drawStyle\":\"line\",\"fillOpacity\":0,\"gradientMode\":\"none\",\"hideFrom\":{\"legend\":false,\"tooltip\":false,\"viz\":false},\"insertNulls\":false,\"lineInterpolation\":\"linear\",\"lineWidth\":1,\"pointSize\":5,\"scaleDistribution\":{\"type\":\"linear\"},\"showPoints\":\"auto\",\"showValues\":false,\"spanNulls\":false,\"stacking\":{\"group\":\"A\",\"mode\":\"none\"},\"thresholdsStyle\":{\"mode\":\"off\"}},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":9,\"w\":11,\"x\":12,\"y\":24},\"id\":15,\"options\":{\"legend\":{\"calcs\":[],\"displayMode\":\"list\",\"placement\":\"bottom\",\"showLegend\":true},\"tooltip\":{\"hideZeros\":false,\"mode\":\"single\",\"sort\":\"none\"}},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"new_violations\\\")\\r\\n  |\\u003e map(fn: (r) =\\u003e ({\\r\\n      _time: r._time,\\r\\n      _value: int(v: r._value)\\r\\n    }))\\r\\n\",\"refId\":\"A\"}],\"title\":\"New Issues\",\"type\":\"timeseries\"}",
+    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ffc7vi02xq77kc\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"palette-classic\"},\"custom\":{\"axisBorderShow\":false,\"axisCenteredZero\":false,\"axisColorMode\":\"text\",\"axisLabel\":\"\",\"axisPlacement\":\"auto\",\"barAlignment\":0,\"barWidthFactor\":0.6,\"drawStyle\":\"line\",\"fillOpacity\":0,\"gradientMode\":\"none\",\"hideFrom\":{\"legend\":false,\"tooltip\":false,\"viz\":false},\"insertNulls\":false,\"lineInterpolation\":\"linear\",\"lineWidth\":1,\"pointSize\":5,\"scaleDistribution\":{\"type\":\"linear\"},\"showPoints\":\"auto\",\"showValues\":false,\"spanNulls\":false,\"stacking\":{\"group\":\"A\",\"mode\":\"none\"},\"thresholdsStyle\":{\"mode\":\"off\"}},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":9,\"w\":11,\"x\":12,\"y\":26},\"id\":15,\"options\":{\"legend\":{\"calcs\":[],\"displayMode\":\"list\",\"placement\":\"bottom\",\"showLegend\":true},\"tooltip\":{\"hideZeros\":false,\"mode\":\"single\",\"sort\":\"none\"}},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"new_violations\\\")\\r\\n  |\\u003e map(fn: (r) =\\u003e ({\\r\\n      _time: r._time,\\r\\n      _value: int(v: r._value)\\r\\n    }))\\r\\n\",\"refId\":\"A\"}],\"title\":\"New Issues\",\"type\":\"timeseries\"}",
     "created": "2026-01-15 12:48:37",
     "created_by": 1,
-    "updated": "2026-01-15 13:14:05",
+    "updated": "2026-02-04 10:52:54",
     "updated_by": 1,
-    "version": 2,
+    "version": 3,
     "folder_uid": "general"
   },
   {
@@ -212,12 +212,12 @@
     "kind": 1,
     "type": "stat",
     "description": "",
-    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":8,\"w\":12,\"x\":0,\"y\":0},\"id\":17,\"libraryPanel\":{\"name\":\"LP_Bugs\",\"uid\":\"efa8vftvwke0wd\"},\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"bugs\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\",\"refId\":\"A\"}],\"title\":\"Bugs\",\"type\":\"stat\"}",
+    "model": "{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ffc7vi02xq77kc\"},\"description\":\"\",\"fieldConfig\":{\"defaults\":{\"color\":{\"mode\":\"thresholds\"},\"mappings\":[],\"thresholds\":{\"mode\":\"absolute\",\"steps\":[{\"color\":\"green\",\"value\":null},{\"color\":\"red\",\"value\":80}]}},\"overrides\":[]},\"gridPos\":{\"h\":5,\"w\":6,\"x\":17,\"y\":3},\"id\":17,\"options\":{\"colorMode\":\"value\",\"graphMode\":\"area\",\"justifyMode\":\"auto\",\"orientation\":\"auto\",\"percentChangeColorMode\":\"standard\",\"reduceOptions\":{\"calcs\":[\"lastNotNull\"],\"fields\":\"/^_value$/\",\"values\":false},\"showPercentChange\":false,\"textMode\":\"auto\",\"wideLayout\":true},\"pluginVersion\":\"12.3.1\",\"targets\":[{\"datasource\":{\"type\":\"influxdb\",\"uid\":\"ef9f994bzv9c0b\"},\"query\":\"from(bucket: \\\"${bucket}\\\")\\r\\n  |\\u003e range(start: -30d)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r._field == \\\"bugs\\\")\\r\\n  |\\u003e last()\\r\\n  |\\u003e keep(columns: [\\\"_value\\\"])\",\"refId\":\"A\"}],\"title\":\"Bugs\",\"type\":\"stat\"}",
     "created": "2026-01-15 13:11:27",
     "created_by": 1,
-    "updated": "2026-01-15 13:11:27",
+    "updated": "2026-02-04 10:52:23",
     "updated_by": 1,
-    "version": 1,
+    "version": 2,
     "folder_uid": "general"
   }
 ]
