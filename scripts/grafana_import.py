@@ -5,7 +5,7 @@ import os
 # ================= CONFIG =================
 TARGET_DB_PATH = "C:\\grafana\\grafana-12.3.1\\data\\grafana.db"  # path to source Grafana SQLite DB
 IMPORT_DIR = "grafana_export"  # copied folder from source machine
-TABLES = ["folder", "library_element","library_element_connection", "dashboard", "dashboard_tag", "dashboard_version", "playlist", "playlist_item"]
+TABLES = ["folder", "data_source", "library_element","library_element_connection", "dashboard", "dashboard_tag", "dashboard_version", "playlist", "playlist_item"]
 # ==========================================
 
 def import_table(conn, table, file_path):

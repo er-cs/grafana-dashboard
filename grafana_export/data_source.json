@@ -1,0 +1,27 @@
+[
+  {
+    "id": 6,
+    "org_id": 1,
+    "version": 10,
+    "type": "influxdb",
+    "name": "DS_INFLUXDB-1",
+    "access": "proxy",
+    "url": "http://localhost:8086",
+    "password": "",
+    "user": "",
+    "database": "",
+    "basic_auth": 0,
+    "basic_auth_user": "",
+    "basic_auth_password": "",
+    "is_default": 1,
+    "json_data": "{\"dbName\":\"mydb\",\"httpMode\":\"POST\",\"organization\":\"Org\",\"pdcInjected\":false,\"version\":\"Flux\"}",
+    "created": "2026-01-07 05:59:24",
+    "updated": "2026-01-09 07:57:55",
+    "with_credentials": 0,
+    "secure_json_data": "{\"token\":\"I1ltWTViVzgyWldsa05XOW5NR0kjKllXVnpMV05tWWcqQmVVV3NlVzCjfsmQVUgJfmMSasflNFt0I2O70ocK+ToE22X6kyuVzIMzRNOHH73CrFp+yLkdNnY0njqktBj2J/gTZ2rxlMxBM//1MAke2BvfrLrlM6+6e7QyLmFguY9dFDOmry5waZpIFGrQu9p4yQ==\"}",
+    "read_only": 0,
+    "uid": "ef9f994bzv9c0b",
+    "is_prunable": 0,
+    "api_version": ""
+  }
+]

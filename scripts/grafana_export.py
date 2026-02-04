@@ -5,7 +5,7 @@ import os
 # ================= CONFIG =================
 SOURCE_DB_PATH = "C:\\grafana\\grafana-12.3.1\\data\\grafana.db"  # path to source Grafana SQLite DB
 EXPORT_DIR = "grafana_export"
-TABLES = ["folder", "library_element","library_element_connection", "dashboard", "dashboard_tag", "dashboard_version", "playlist", "playlist_item"]
+TABLES = ["folder","data_source", "library_element","library_element_connection", "dashboard", "dashboard_tag", "dashboard_version", "playlist", "playlist_item"]
 # ==========================================
 
 os.makedirs(EXPORT_DIR, exist_ok=True)
